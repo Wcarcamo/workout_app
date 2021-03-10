@@ -1,7 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
-import Bar from './components/navBar'
-import Bucket from './components/bucket'
+//import logo from './logo.svg';
+//import './App.css';
+import React from 'react';
+import './w3.css';
+import Bar from './components/navBar';
+import Workouts from './components/workouts';
 
 // function App() {
 //   return (
@@ -24,9 +26,14 @@ import Bucket from './components/bucket'
 //   );
 // }
 
-function App() {
-  return(
-    <Bar />
-  );
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <Bar />
+        <Workouts />
+      </div>
+    );
+  }
 }
 export default App;

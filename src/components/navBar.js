@@ -1,12 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 class Bar extends React.Component {
   render() {
     return (
-      <div>
-        <button>Log</button>
-        <button>Track</button>
+      <div className="w3-bar w3-blue-gray">
+        <button className="w3-bar-item w3-button">Log</button>
+        <button className="w3-bar-item w3-button">Track</button>
       </div>
     );
   }
