@@ -3,7 +3,7 @@
 import React from 'react';
 import './w3.css';
 import Bar from './components/navBar';
-import Workouts from './components/workouts';
+import Exercises from './components/exercises';
 
 // function App() {
 //   return (
@@ -31,7 +31,7 @@ class App extends React.Component {
     return(
       <div>
         <Bar />
-        <Workouts />
+        <Exercises />
       </div>
     );
   }
