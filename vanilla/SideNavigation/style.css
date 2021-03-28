@@ -1,0 +1,230 @@
+/* 
+Potential Color Pallete
+NavyBlue: #0A4158
+TealGreen: #4B8378
+Orange: #FF9636
+Scallop Seashell: #E4D7D0
+*/
+
+/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
+html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
+html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
+audio,canvas,progress,video{display:inline-block}progress{vertical-align:baseline}
+audio:not([controls]){display:none;height:0}[hidden],template{display:none}
+a{background-color:transparent}a:active,a:hover{outline-width:0}
+abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}
+b,strong{font-weight:bolder}dfn{font-style:italic}mark{background:#ff0;color:#000}
+small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
+sub{bottom:-0.25em}sup{top:-0.5em}figure{margin:1em 40px}img{border-style:none}
+code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}hr{box-sizing:content-box;height:0;overflow:visible}
+button,input,select,textarea,optgroup{font:inherit;margin:0}optgroup{font-weight:bold}
+button,input{overflow:visible}button,select{text-transform:none}
+button,[type=button],[type=reset],[type=submit]{-webkit-appearance:button}
+button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}
+button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}
+fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
+legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
+[type=checkbox],[type=radio]{padding:0}
+[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
+[type=search]{-webkit-appearance:textfield;outline-offset:-2px}
+[type=search]::-webkit-search-decoration{-webkit-appearance:none}
+::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}
+/* End extract */
+
+.container {
+  padding: 16px;
+}
+
+.section {
+  margin: 16px 0px ;
+}
+
+div.content {
+  margin-left: 225px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* RESPONSIVE SIDEBAR/MENU */
+
+.sidebar {
+  background-color: #0A4158;
+  color: white;
+  height: 100%;
+  margin: 0;
+  overflow: auto;
+  padding: 0px;
+  position: fixed;
+  width: 225px;
+}
+
+#exercises button {
+  background-color: #0A4158;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 16px;
+  padding: 8px 32px;
+  text-align: left;
+  text-decoration: none;
+  width:100%;
+}
+
+#menu {
+  display: none;
+  color: white;
+  font-size: 32px;
+  text-decoration: none;
+}
+
+#exercises button:hover {
+  background-color: #083446;
+  color: white;
+}
+
+#exercises button:focus {
+  outline: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  #menu {
+    display: block;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  /* .sidebar #exercises {display: none;} */
+  div.content {margin-left: 0;}
+}
+
+/* TABLE */
+
+table, caption {
+  width: 100%;
+  text-align: left;
+}
+
+table {
+  border-spacing: 0px;
+}
+
+thead {
+  color: white;
+  background-color: #0A4158;
+}
+
+th, td {
+  padding: 6px;
+  border-bottom: 1px solid #DDD;
+}
+
+/* FORMS */
+
+input[type=number], label.checkbox {
+  display: block;
+  margin: 8px 0px;
+}
+
+input[type=number] {
+  background-color: #EEE;
+  border: none;
+  padding: 16px;
+}
+
+.submit {
+  background-color: #0A4158;
+  border: none;
+  color: white;
+  margin-top: 16px;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background-color: #FF9636;
+}
+
+/* CUSTOM CHECKBOX */
+
+/* Checkbox Custom Styles */
+.checkboxes {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 8px 0px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxes input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #EEE;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxes:hover input ~ .checkmark {
+  background-color: #CCC;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxes input:checked ~ .checkmark {
+  background-color: #0A4158;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxes input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxes .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}

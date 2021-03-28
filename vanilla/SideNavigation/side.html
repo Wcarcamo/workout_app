@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Workout App</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!--NAVIGATION-->
+<div class="sidebar">
+  <h1 style="padding: 16px; margin: 0px;">Workout Log</h1>
+  <a href="javascript:void(0)" id="menu" onclick="menuToggle()">&#9776; </a>
+  <div id="exercises">
+    <button id="Squat" onclick="selectExercise(this)">Squat</button>
+    <button id="Bench Press" onclick="selectExercise(this)">Bench Press</button>
+    <button id="Chin Up" onclick="selectExercise(this)">Chin Up</button>
+    <button id="Overhead Press" onclick="selectExercise(this)">Overhead Press</button>
+    <button id="Deadlift" onclick="selectExercise(this)">Deadlift</button>
+  </div>
+</div>
+
+<!--PAGE CONTENT-->
+<div class="content">
+  <h1 id="exercise"></h2>
+  <h2>Track</h2>
+  <table class="section">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>lbs</th>
+        <th>Sets</th>
+        <th>Reps</th>
+        <th>Goal Met</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>01/01/2021</td>
+        <td>185</td>
+        <td>3</td>
+        <td>5</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>01/03/2021</td>
+        <td>190</td>
+        <td>3</td>
+        <td>5</td>
+        <td>Yes</td>
+      </tr>
+      <tr>
+        <td>01/05/2021</td>
+        <td>195</td>
+        <td>3</td>
+        <td>5</td>
+        <td>Yes</td>
+      </tr>
+    </tbody>
+  </table>
+  <h2>Log</h2>
+  <form> 
+    <input name="lbs" type="number" placeholder="lbs"/>
+    <input name="sets" type="number" placeholder="Sets"/>
+    <input name="reps" type="number" placeholder="Reps"/>
+    <label class="checkboxes">Reps To Failure
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checkboxes">Goal Met
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <button class="submit">Submit</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

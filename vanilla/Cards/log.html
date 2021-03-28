@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Workout App</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--NAVIGATION-->
+<div class="navBar">
+  <a href="log.html" class="active">Log</a>
+  <a href="track.html">Track</a>
+</div>
+
+<!--PAGE CONTENT-->
+<div class="row">
+  <div class="container col-3">
+    <div class="card exercises">
+      <button class="exList">Squat</button>
+      <button class="exList">Bench Press</button>
+      <button class="exList">Chin Up</button>
+      <button class="exList">Overhead Press</button>
+      <button class="exList">Deadlift</button>
+      <button class="exList">Custom</button>
+    </div>
+  </div>
+  <div class="container col-9">
+    <div class="container card" style="overflow-x: auto;">
+      <h1 style="margin-top: 0%;">Squat</h2>
+      <h2>Track</h2>
+      <table class="section">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>lbs</th>
+            <th>Sets</th>
+            <th>Reps</th>
+            <th>Goal Met</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/01/2021</td>
+            <td>185</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>01/03/2021</td>
+            <td>190</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Yes</td>
+          </tr>
+          <tr>
+            <td>01/05/2021</td>
+            <td>195</td>
+            <td>3</td>
+            <td>5</td>
+            <td>Yes</td>
+          </tr>
+        </tbody>
+      </table>
+      <h2>Log</h2>
+      <form> 
+        <input name="lbs" type="number" placeholder="lbs"/>
+        <input name="sets" type="number" placeholder="Sets"/>
+        <input name="reps" type="number" placeholder="Reps"/>
+        <label for="tf" class="checkbox">
+          <input name="tf" type="checkbox" />
+          To Failure
+        </label>
+        <label for="gm" class="checkbox">
+          <input name="gm" type="checkbox" >
+          Goal Met
+        </label>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
